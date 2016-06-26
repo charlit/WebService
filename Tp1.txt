@@ -1,0 +1,42 @@
+Enregistrer :
+_____________
+
+POST :
+
+curl -v -X POST --data-binary "name=TEST&description=blabla&url=www.google.fr" http://rest-bookmarks.herokuapp.com/api/bookmarks/ 
+
+& 
+
+PUT :
+
+curl -v -X PUT --data-binary "name=TEST&description=blabla4&url=www.google.fr" http://rest-bookmarks.herokuapp.com/api/bookmarks/123 
+
+
+Consultation :
+______________
+
+curl -v -X GET  http://rest-bookmarks.herokuapp.com/api/bookmarks/123 
+
+
+
+
+Mise à jours :
+______________
+
+curl -v -X PUT --data-binary "name=TEST&description=blabla4&url=www.google.fr" http://rest-bookmarks.herokuapp.com/api/bookmarks/123 
+
+
+Delete :
+________
+
+curl -v -X DELETE http://rest-bookmarks.herokuapp.com/api/bookmarks/9b3b4db6-59e7-4957-baa9-eff5ffca59e1
+
+
+Maj du dernier :
+_________________
+
+curl -v -X GET http://rest-bookmarks.herokuapp.com/api/bookmarks/latest
+
+Prendre content-location
+
+curl -v -X PUT --data-binary "name=Vive Free&description=blabla4&url=www.free.fr" [CONTENT LOCATION] 
