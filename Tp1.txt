@@ -11,7 +11,6 @@ PUT :
 
 curl -v -X PUT --data-binary "name=TEST&description=blabla4&url=www.google.fr" http://rest-bookmarks.herokuapp.com/api/bookmarks/123 
 
-
 Consultation :
 ______________
 
